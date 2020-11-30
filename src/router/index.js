@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 
 import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home'
 import About from '@/components/About'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
 // 配置路由路径
 const routes = [
@@ -27,7 +27,7 @@ const routes = [
 ]
 
 // 将路径注入到Router中
-const router = new Router({
+const router = new VueRouter({
     'mode': 'history',
     routes
 })
